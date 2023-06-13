@@ -1,9 +1,20 @@
 package ssb.dto;
 
-public class Room {
-    private String name;
-    private String roomNumber;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "ROOM")
+public class Room {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ROOM_ID")
+    private long room_id;
+    @Column(name = "NAME")
+    private String name;
+    @Column(name = "ROOM_NUMBER")
+    private String roomNumber;
+    @Column(name = "BED_INFO")
     private String bedInfo;
 
     public Room(){
