@@ -54,6 +54,11 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>pl.wrzasq.cform</groupId>
+      <artifactId>cform-data-appsync-graphqlapi</artifactId>
+      <version>1.1.9</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
