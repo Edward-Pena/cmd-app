@@ -16,11 +16,8 @@ import java.util.List;
 
 @QuarkusMain
 public class MainApplication implements QuarkusApplication {
-
     @Inject
     DataSource dataSource;
-
-
     @Override
     public int run(String... args) throws Exception {
     String sql="SELECT NAME,ROOM_NUMBER,BED_INFO FROM ROOM";
